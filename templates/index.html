@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from wowtheme7.com/tf/dpmarket/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Oct 2024 00:39:17 GMT -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Digital Market Place HTML Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../static/images/logo/favicon-two.png" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../static/css/fontawesome-all.min.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="../static/css/slick.css" />
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="../static/css/magnific-popup.css" />
+    <!-- line awesome -->
+    <link rel="stylesheet" href="../static/css/line-awesome.min.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="../static/css/main.css" />
+  </head>
+  <body>
+    <!--==================== Preloader Start ====================-->
+    <div class="loader-mask">
+      <div class="loader">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!--==================== Preloader End ====================-->
+
+    <!--==================== Overlay Start ====================-->
+    <div class="overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="side-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <div class="progress-wrap">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+
+    <!-- ==================== Mobile Menu Start Here ==================== -->
+    <div class="mobile-menu d-lg-none d-block">
+      <button type="button" class="close-button">
+        <i class="las la-times"></i>
+      </button>
+      <div class="mobile-menu__inner">
+        <a href="index.html" class="mobile-menu__logo">
+          <img
+            src="../static/images/logo/logo.png"
+            alt="Logo"
+            class="white-version"
+          />
+          <img
+            src="../static/images/logo/white-logo-two.png"
+            alt="Logo"
+            class="dark-version"
+          />
+        </a>
+      </div>
+    </div>
+    <!-- ==================== Mobile Menu End Here ==================== -->
+
+    <main class="change-gradient">
+      <!-- ============================ Sale Offer End =========================== -->
+      <!-- ==================== Header Start Here ==================== -->
+      <header class="header">
+        <div class="container container-full">
+          <nav class="header-inner flx-between">
+            <!-- Logo Start -->
+            <div class="logo">
+              <a href="index.html" class="link white-version">
+                <img src="../static/images/logo/logo-two.png" alt="Logo" />
+              </a>
+              <a href="index.html" class="link dark-version">
+                <img src="../static/images/logo/white-logo.png" alt="Logo" />
+              </a>
+            </div>
+            <!-- Logo End  -->
+
+            <!-- Menu Start  -->
+            <div class="header-menu d-lg-block d-none">
+              <ul class="nav-menu flx-align">
+                <li class="nav-menu__item ">
+                  <a href="javascript:void(0)" class="nav-menu__link">Home</a>
+                </li>
+                <li class="nav-menu__item ">
+                  <a href="javascript:void(0)" class="nav-menu__link"
+                    >Products</a
+                  >
+              </ul>
+            </div>
+            <!-- Menu End  -->
+
+            <!-- Header Right start -->
+            <div class="header-right flx-align">
+              <!-- Light Dark Mode -->
+              <div class="theme-switch-wrapper position-relative">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" class="d-none" id="checkbox" />
+                  <span
+                    class="slider text-black header-right__button white-version"
+                  >
+                    <img src="../static/images/icons/sun.svg" alt="" />
+                  </span>
+                  <span
+                    class="slider text-black header-right__button dark-version"
+                  >
+                    <img src="../static/images/icons/moon.svg" alt="" />
+                  </span>
+                </label>
+              </div>
+
+              <button type="button" class="toggle-mobileMenu d-lg-none">
+                <i class="las la-bars"></i>
+              </button>
+            </div>
+            <!-- Header Right End  -->
+          </nav>
+        </div>
+      </header>
+      <!-- ==================== Header End Here ==================== -->
+      <!--========================== Banner Section Start ==========================-->
+      <section class="hero section-bg z-index-1 ">
+        <img
+          src="../static/images/gradients/banner-gradient.png"
+          alt=""
+          class="bg--gradient white-version"
+        />
+
+        <img
+          src="../static/images/shapes/element-moon1.png"
+          alt=""
+          class="element one"
+        />
+        <img
+          src="../static/images/shapes/element-moon2.png"
+          alt=""
+          class="element two"
+        />
+
+        <div class="container container-two">
+          <div class="row align-items-center gy-sm-5 gy-4">
+            <div class="col-lg-6">
+              <div class="hero-inner position-relative pe-lg-5">
+                <div>
+                  <h2 class="">
+                    Sentiment analysis from product reviews
+                  </h2>
+                  <p class="hero-inner__desc font-18">
+                    A Sentiment Analysis from Product Reviews website allows users to analyze customer feedback from product reviews to gauge overall sentiment, such as whether the feedback is positive, negative, or neutral. Using natural language processing (NLP) techniques, the website can automatically classify and visualize customer opinions about specific products.
+                  </p>
+
+                  <div class="position-relative">
+                    <div class="search-box">
+                      <form action="{{url_for('search_url')}}" method="POST">
+                            <input
+                            type="text"
+                            class="common-input common-input--lg pill shadow-sm auto-suggestion-input"
+                            placeholder="Search By link of the product from amazon "
+                            name="url"
+                            />
+                        <button
+                            type="submit"
+                            class="btn btn-main btn-icon icon border-0"
+                        >
+                            <img src="../static/images/icons/search.svg" alt="" />
+                        </button>
+                      </form>
+                    </div>
+
+                    <ul class="auto-suggestion-list">
+                      <li>
+                        <a
+                          href="#"
+                          class="auto-suggestion-list__item w-100 text-body"
+                          >Business in HTML</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="auto-suggestion-list__item w-100 text-body"
+                          >Business in WordPress</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="auto-suggestion-list__item w-100 text-body"
+                          >Business in CMS</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="auto-suggestion-list__item w-100 text-body"
+                          >Ecommerce in HTML</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="auto-suggestion-list__item w-100 text-body"
+                          >Ecommerce in WordPress</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="auto-suggestion-list__item w-100 text-body"
+                          >Ecommerce in CMS</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-thumb">
+                <img src="../static/images/thumbs/banner-img.png" alt="" />
+                <img
+                  src="../static/images/shapes/dots.png"
+                  alt=""
+                  class="dotted-img white-version"
+                />
+                <img
+                  src="../static/images/shapes/dots-white.png"
+                  alt=""
+                  class="dotted-img dark-version"
+                />
+                <img
+                  src="../static/images/shapes/element2.png"
+                  alt=""
+                  class="element two end-0"
+                />
+
+                <div class="statistics animation bg-main text-center">
+                  <h5 class="statistics__amount text-white">50k</h5>
+                  <span class="statistics__text text-white font-14"
+                    >Customers</span
+                  >
+                </div>
+
+                <div class="statistics style-two bg-white text-center">
+                  <h5
+                    class="statistics__amount statistics__amount-two text-heading"
+                  >
+                    22k
+                  </h5>
+                  <span class="statistics__text text-heading font-14"
+                    >Searche per day</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--========================== Banner Section End ==========================-->
+
+     
+
+      <!-- bottom Footer -->
+      <div class="bottom-footer">
+        <div class="container container-two">
+          <div class="bottom-footer__inner flx-between gap-3">
+            <p class="bottom-footer__text font-14">
+              Copyright &copy; 2024 JADIR Mohammed.
+            </p>
+            <div class="footer-links">
+              <a href="https://jadir-mohammed.netlify.app/" class="footer-link font-14">JADIR Mohammed</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ==================== Footer End Here ==================== -->
+    </main>
+
+    <!-- Jquery js -->
+    <script src="../static/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="../static/js/boostrap.bundle.min.js"></script>
+    <!-- CountDown -->
+    <script src="../static/js/countdown.js"></script>
+    <!-- counter up -->
+    <script src="../static/js/counterup.min.js"></script>
+    <!-- Slick js -->
+    <script src="../static/js/slick.min.js"></script>
+    <!-- magnific popup -->
+    <script src="../static/js/jquery.magnific-popup.js"></script>
+    <!-- apex chart -->
+    <script src="../static/js/apexchart.js"></script>
+    <!-- marquee -->
+    <script src="../static/js/marquee.min.js"></script>
+
+    <!-- main js -->
+    <script src="../static/js/main.js"></script>
+  </body>
+
+  <!-- Mirrored from wowtheme7.com/tf/dpmarket/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Oct 2024 00:40:02 GMT -->
+</html>
