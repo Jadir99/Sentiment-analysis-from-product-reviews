@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Mirrored from wowtheme7.com/tf/dpmarket/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Oct 2024 00:39:17 GMT -->
+  <!-- Mirrored from wowtheme7.com/tf/dpmarket// by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Oct 2024 00:39:17 GMT -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title -->
-    <title>Digital Market Place HTML Template</title>
+    <title>DragoLearn By JADIR</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="../static/images/logo/favicon-two.png" />
 
@@ -60,7 +60,7 @@
         <i class="las la-times"></i>
       </button>
       <div class="mobile-menu__inner">
-        <a href="index.html" class="mobile-menu__logo">
+        <a href="/" class="mobile-menu__logo">
           <img
             src="../static/images/logo/logo.png"
             alt="Logo"
@@ -84,10 +84,10 @@
           <nav class="header-inner flx-between">
             <!-- Logo Start -->
             <div class="logo">
-              <a href="index.html" class="link white-version">
+              <a href="/" class="link white-version">
                 <img src="../static/images/logo/logo-two.png" alt="Logo" />
               </a>
-              <a href="index.html" class="link dark-version">
+              <a href="/" class="link dark-version">
                 <img src="../static/images/logo/white-logo.png" alt="Logo" />
               </a>
             </div>
@@ -99,10 +99,7 @@
                 <li class="nav-menu__item ">
                   <a href="javascript:void(0)" class="nav-menu__link">Home</a>
                 </li>
-                <li class="nav-menu__item ">
-                  <a href="javascript:void(0)" class="nav-menu__link"
-                    >Products</a
-                  >
+                
               </ul>
             </div>
             <!-- Menu End  -->
@@ -169,19 +166,41 @@
                   <div class="position-relative">
                     <div class="search-box">
                       <form action="{{url_for('search_url')}}" method="POST">
-                            <input
+                        <input
                             type="text"
                             class="common-input common-input--lg pill shadow-sm auto-suggestion-input"
-                            placeholder="Search By link of the product from amazon "
+                            placeholder="Search By link of the product from amazon"
                             name="url"
-                            />
+                        />
                         <button
-                            type="submit"
+                            type="submit" onclick="spinner()"
                             class="btn btn-main btn-icon icon border-0"
                         >
                             <img src="../static/images/icons/search.svg" alt="" />
                         </button>
+                        <script>
+                            function spinner() {
+                                // Créer l'élément div avec la classe "loader-mask"
+                                const loaderMask = document.createElement("div");
+                                loaderMask.className = "loader-mask";
+                    
+                                // Créer l'élément div avec la classe "loader" à l'intérieur de "loader-mask"
+                                const loader = document.createElement("div");
+                                loader.className = "loader";
+                                loaderMask.appendChild(loader);
+                    
+                                // Créer deux divs vides à l'intérieur de "loader"
+                                const div1 = document.createElement("div");
+                                const div2 = document.createElement("div");
+                                loader.appendChild(div1);
+                                loader.appendChild(div2);
+                    
+                                // Ajouter l'élément "loader-mask" au corps du document
+                                document.body.appendChild(loaderMask);
+                            }
+                        </script>
                       </form>
+                    
                     </div>
 
                     <ul class="auto-suggestion-list">
@@ -314,5 +333,5 @@
     <script src="../static/js/main.js"></script>
   </body>
 
-  <!-- Mirrored from wowtheme7.com/tf/dpmarket/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Oct 2024 00:40:02 GMT -->
+  <!-- Mirrored from wowtheme7.com/tf/dpmarket// by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Oct 2024 00:40:02 GMT -->
 </html>

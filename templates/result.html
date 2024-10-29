@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title> Digital Market Place HTML Template</title>
+    <title> DragoLearn by JADIR Mohammed</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="../static/images/logo/favicon.png">
 
@@ -70,10 +70,10 @@
                       <nav class="header-inner flx-between">
                         <!-- Logo Start -->
                         <div class="logo">
-                          <a href="index.html" class="link white-version">
+                          <a href="/" class="link white-version">
                             <img src="../static/images/logo/logo-two.png" alt="Logo" />
                           </a>
-                          <a href="index.html" class="link dark-version">
+                          <a href="/" class="link dark-version">
                             <img src="../static/images/logo/white-logo.png" alt="Logo" />
                           </a>
                         </div>
@@ -125,16 +125,6 @@
 
                 <div class="dashboard-body__content">
 
-                    <!-- welcome balance Content Start -->
-                    <div class="welcome-balance mt-2 mb-40 flx-between gap-2">
-                        <div class="welcome-balance__left">
-                            <h4 class="welcome-balance__title mb-0">Welcome back! Michel</h4>
-                        </div>
-                        <div class="welcome-balance__right flx-align gap-2">
-                            <span class="welcome-balance__text fw-500 text-heading">Available Balance:</span>
-                            <h4 class="welcome-balance__balance mb-0">$580.00</h4>
-                        </div>
-                    </div>
                     <!-- welcome balance Content End -->
 
                     <div class="dashboard-body__item-wrapper">
@@ -149,12 +139,12 @@
                                         <img src="../static/images/shapes/widget-shape2.png" alt=""
                                             class="dashboard-widget__shape two">
                                         <span class="dashboard-widget__icon">
-                                            <img src="../static/images/icons/dashboard-widget-icon1.svg" alt="">
+                                            <img src="../static/images/icons/commenter.png" alt="">
                                         </span>
                                         <div class="dashboard-widget__content flx-between gap-1 align-items-end">
                                             <div>
-                                                <h4 class="dashboard-widget__number mb-1 mt-3">2M+</h4>
-                                                <span class="dashboard-widget__text font-14">Total Products</span>
+                                                <h4 class="dashboard-widget__number mb-1 mt-3">100</h4>
+                                                <span class="dashboard-widget__text font-14">Total Comments</span>
                                             </div>
                                             <img src="../static/images/icons/chart-icon.svg" alt="">
                                         </div>
@@ -167,12 +157,12 @@
                                         <img src="../static/images/shapes/widget-shape2.png" alt=""
                                             class="dashboard-widget__shape two">
                                         <span class="dashboard-widget__icon">
-                                            <img src="../static/images/icons/dashboard-widget-icon2.svg" alt="">
+                                            <img src="../static/images/icons/triste.png" alt="">
                                         </span>
                                         <div class="dashboard-widget__content flx-between gap-1 align-items-end">
                                             <div>
-                                                <h4 class="dashboard-widget__number mb-1 mt-3">$5289.00</h4>
-                                                <span class="dashboard-widget__text font-14">Total Earnings</span>
+                                                <h4 class="dashboard-widget__number mb-1 mt-3">{{negative}}</h4>
+                                                <span class="dashboard-widget__text font-14">Total negative</span>
                                             </div>
                                             <img src="../static/images/icons/chart-icon.svg" alt="">
                                         </div>
@@ -185,12 +175,12 @@
                                         <img src="../static/images/shapes/widget-shape2.png" alt=""
                                             class="dashboard-widget__shape two">
                                         <span class="dashboard-widget__icon">
-                                            <img src="../static/images/icons/dashboard-widget-icon3.svg" alt="">
+                                            <img src="../static/images/icons/visage-neutre.png" alt="">
                                         </span>
                                         <div class="dashboard-widget__content flx-between gap-1 align-items-end">
                                             <div>
-                                                <h4 class="dashboard-widget__number mb-1 mt-3">5,2458</h4>
-                                                <span class="dashboard-widget__text font-14">Total Downloads</span>
+                                                <h4 class="dashboard-widget__number mb-1 mt-3">{{neutral}}</h4>
+                                                <span class="dashboard-widget__text font-14">Total neutral</span>
                                             </div>
                                             <img src="../static/images/icons/chart-icon.svg" alt="">
                                         </div>
@@ -203,12 +193,12 @@
                                         <img src="../static/images/shapes/widget-shape2.png" alt=""
                                             class="dashboard-widget__shape two">
                                         <span class="dashboard-widget__icon">
-                                            <img src="../static/images/icons/dashboard-widget-icon4.svg" alt="">
+                                            <img src="../static/images/icons/sourire.png" alt="">
                                         </span>
                                         <div class="dashboard-widget__content flx-between gap-1 align-items-end">
                                             <div>
-                                                <h4 class="dashboard-widget__number mb-1 mt-3">2,589</h4>
-                                                <span class="dashboard-widget__text font-14">Total Sales</span>
+                                                <h4 class="dashboard-widget__number mb-1 mt-3">{{positivs}}</h4>
+                                                <span class="dashboard-widget__text font-14">Total positive</span>
                                             </div>
                                             <img src="../static/images/icons/chart-icon.svg" alt="">
                                         </div>
@@ -220,208 +210,77 @@
 
                         <!-- dashboard body Item Start -->
                         <div class="dashboard-body__item">
-                            <div class="row gy-4">
-                                <div class="col-xl-8">
+                            <div class="row gy-4 mb-40 justify-content-center">
+                                <div class="col-xl-6">
+                                    <div class="dashboard-card">
+                                        <div class="dashboard-card__header flx-between gap-2">
+                                            <h6 class="dashboard-card__title mb-0">Your Product</h6>
+                                        </div>
+                                        <div class="dashboard-card__chart d-flex justify-content-center">
+                                            <img src="{{ Product_link }}" alt="product_link" class="centered-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="row gy-4 mb-40">
+                                <div class="col-xl-6">
+                                    <div class="dashboard-card">
+                                        <div class="dashboard-card__header flx-between gap-2">
+                                            <h6 class="dashboard-card__title mb-0">word cloud</h6>
+                                        </div>
+                                        <div class="dashboard-card__chart">
+                                            <img src="../static/images/plots/wordcloud{{product_name}}.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
                                     <div class="dashboard-card">
                                         <div class="dashboard-card__header flx-between gap-2">
                                             <h6 class="dashboard-card__title mb-0">Sales History</h6>
                                         </div>
                                         <div class="dashboard-card__chart">
-                                            <img src="../static/images/plots/statistiques.png" alt="">
+                                            <img src="../static/images/plots/bar{{product_name}}.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gy-4">
+                                <div class="col-xl-4">
+                                    <div class="dashboard-card">
+                                        <div class="dashboard-card__header flx-between gap-2">
+                                            <h6 class="dashboard-card__title mb-0">Pie plot</h6>
+                                        </div>
+                                        <div class="dashboard-card__chart">
+                                            <img src="../static/images/plots/Pie{{product_name}}.png" alt="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-4">
                                     <div class="dashboard-card">
-                                        <div class="dashboard-card__header">
-                                            <h6 class="dashboard-card__title mb-0">Top Countries</h6>
+                                        <div class="dashboard-card__header flx-between gap-2">
+                                            <h6 class="dashboard-card__title mb-0">Correlation</h6>
                                         </div>
-                                        <ul class="country-list">
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag1.png" alt=""></span>
-                                                    <span class="country-list__name">United States</span>
-                                                </div>
-                                                <span class="country-list__amount">$58.00</span>
-                                            </li>
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag2.png" alt=""></span>
-                                                    <span class="country-list__name">Maxico</span>
-                                                </div>
-                                                <span class="country-list__amount">$69.00</span>
-                                            </li>
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag3.png" alt=""></span>
-                                                    <span class="country-list__name">Brazil</span>
-                                                </div>
-                                                <span class="country-list__amount">$120.00</span>
-                                            </li>
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag4.png" alt=""></span>
-                                                    <span class="country-list__name">Canada</span>
-                                                </div>
-                                                <span class="country-list__amount">$25.00</span>
-                                            </li>
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag5.png" alt=""></span>
-                                                    <span class="country-list__name">Ireland</span>
-                                                </div>
-                                                <span class="country-list__amount">$85.00</span>
-                                            </li>
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag6.png" alt=""></span>
-                                                    <span class="country-list__name">Newzealand</span>
-                                                </div>
-                                                <span class="country-list__amount">$99.00</span>
-                                            </li>
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag7.png" alt=""></span>
-                                                    <span class="country-list__name">Spain</span>
-                                                </div>
-                                                <span class="country-list__amount">$89.00</span>
-                                            </li>
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag8.png" alt=""></span>
-                                                    <span class="country-list__name">Turkey</span>
-                                                </div>
-                                                <span class="country-list__amount">$72.00</span>
-                                            </li>
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag9.png" alt=""></span>
-                                                    <span class="country-list__name">Italy</span>
-                                                </div>
-                                                <span class="country-list__amount">$465.00</span>
-                                            </li>
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag10.png" alt=""></span>
-                                                    <span class="country-list__name">Argentina</span>
-                                                </div>
-                                                <span class="country-list__amount">$45.00</span>
-                                            </li>
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag11.png" alt=""></span>
-                                                    <span class="country-list__name">Maxico</span>
-                                                </div>
-                                                <span class="country-list__amount">$42.00</span>
-                                            </li>
-                                            <li class="country-list__item flx-between gap-2">
-                                                <div class="country-list__content flx-align gap-2">
-                                                    <span class="country-list__flag"><img
-                                                            src="../static/images/thumbs/flag12.png" alt=""></span>
-                                                    <span class="country-list__name">Newzealand</span>
-                                                </div>
-                                                <span class="country-list__amount">$89.00</span>
-                                            </li>
-                                        </ul>
+                                        <div class="dashboard-card__chart">
+                                            <img src="../static/images/plots/Correlation{{product_name}}.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="dashboard-card">
+                                        <div class="dashboard-card__header flx-between gap-2">
+                                            <h6 class="dashboard-card__title mb-0">Line plot</h6>
+                                        </div>
+                                        <div class="dashboard-card__chart">
+                                            <img src="../static/images/plots/line{{product_name}}.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- dashboard body Item End -->
 
-                        <!-- dashboard body Item Start -->
-                        <div class="dashboard-body__item">
-                            <div class="table-responsive">
-                                <table class="table style-two">
-                                    <thead>
-                                        <tr>
-                                            <th>Date</th>
-                                            <th>Item Sales</th>
-                                            <th>Earning</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> Saturday, 10</td>
-                                            <td> 2</td>
-                                            <td> $89.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Sunday, 11</td>
-                                            <td> 3 </td>
-                                            <td>$150.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Monday, 12</td>
-                                            <td> 2 </td>
-                                            <td>$15.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Tuesday, 15</td>
-                                            <td> 2 </td>
-                                            <td>$25.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Wednesday, 16</td>
-                                            <td> 5 </td>
-                                            <td>$20.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Thursday, 17</td>
-                                            <td> 3 </td>
-                                            <td>$35.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Wednesday, 18</td>
-                                            <td> 1 </td>
-                                            <td>$15.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Thursday, 20</td>
-                                            <td> 5 </td>
-                                            <td>$22.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Wednesday, 22</td>
-                                            <td> 8 </td>
-                                            <td>$10.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Tuesday, 23</td>
-                                            <td> 6 </td>
-                                            <td>$125.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Wednesday, 24</td>
-                                            <td> 3 </td>
-                                            <td>$15.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Tuesday, 23</td>
-                                            <td> 9 </td>
-                                            <td>$15.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Wednesday, 24</td>
-                                            <td> 5 </td>
-                                            <td>$23.00</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- dashboard body Item End -->
 
                     </div>
                 </div>
